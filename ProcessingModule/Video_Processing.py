@@ -9,10 +9,10 @@ from textblob import TextBlob
 
 
 #Specify path to store transcript file
-path = "Path to store transcript file"
+path = "Path_to_store_transcript_file"
 
 #Specify path to Google Application Ccredentials File
-credential_path = "path to Google Application Credentials File"
+credential_path = "path_to_Google_Application_Credentials_File"
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 
 
@@ -96,7 +96,7 @@ print ("Conversion complete!!")
 
 
 #Upload file to Google Storage Bucket
-bucket_name = "videos_upload"
+bucket_name = "your_bucket_name"
 upload_file(bucket_name,path+audio_file,audio_file)
 print ("Video Uploaded!")
 
